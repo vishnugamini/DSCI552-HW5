@@ -1,0 +1,5 @@
+leaf,IF,THEN,joint_class,records
+2,lumbar_pain = no AND urine_pushing = no,Bladder=no; Nephritis=no,0,10
+3,lumbar_pain = no AND urine_pushing = yes,Bladder=yes; Nephritis=no,2,40
+5,lumbar_pain = yes AND temperature <= 37.95,Bladder=no; Nephritis=no,0,20
+6,lumbar_pain = yes AND temperature > 37.95,Bladder=no; Nephritis=yes,1,50
