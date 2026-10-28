@@ -14,6 +14,8 @@ data/
     communities.names
   results/
     ... rules, cross-validation scores, coefficients, predictions, and errors
+src/
+  analysis_helpers.py
 notebook/
   Gamini_Vishnu_HW5.ipynb
 requirements.txt
@@ -31,6 +33,8 @@ python -m notebook
 ```
 
 Open `notebook/Gamini_Vishnu_HW5.ipynb`, restart the kernel, and run all cells. Saved outputs are included. Paths work from the repository root or the notebook directory, and execution recreates `data/results/` without downloading data. On macOS, an XGBoost import error mentioning `libomp` requires the OpenMP runtime (`brew install libomp`).
+
+The supporting module contains shared preprocessing, rule-formatting, and plotting functions. Full numerical tables remain in `data/results/`; the notebook displays compact summaries and both complete LASSO-selected variable lists.
 
 ## Methods
 
